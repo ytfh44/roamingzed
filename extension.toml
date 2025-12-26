@@ -1,0 +1,22 @@
+id = "roaming-zed"
+name = "RoamingZed"
+description = "Bidirectional wikilink support with AI integration for personal knowledge management"
+version = "0.1.0"
+schema_version = 1
+authors = ["RoamingZed Contributors"]
+repository = "https://github.com/roamingzed/roamingzed"
+
+[context_servers.roamingzed]
+# MCP server launched via npx roamingzed-mcp
+
+[slash_commands.backlinks]
+description = "Show pages linking to current file"
+requires_argument = false
+
+[slash_commands.graph]
+description = "Show link graph around current file"
+requires_argument = false
+
+[slash_commands.related]
+description = "Find related notes by link proximity"
+requires_argument = true
