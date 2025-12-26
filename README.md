@@ -8,22 +8,46 @@ Zed 编辑器的双向链接 AI 扩展，提供 Obsidian/Roam/Logseq 风格的 `
 - **Slash Commands**: `/backlinks`、`/graph`、`/related`
 - **可与 Markdown Oxide 共存**
 
-## 安装
+## 快速开始
 
-### Zed Extension
+### 自动安装（推荐）
 
-```bash
-# 在 Zed 中运行命令: "zed: install dev extension"
-# 选择: d:\PROJECTS\roamingzed
+```powershell
+# 克隆项目
+git clone <your-repo-url>
+cd roamingzed
+
+# 运行安装脚本
+.\install.ps1
 ```
 
-### MCP Server
+### 手动安装
 
-```bash
+#### 1. 构建 Rust 扩展
+
+```powershell
+# 添加 WASM 目标（首次）
+rustup target add wasm32-wasip2
+
+# 构建
+cargo build --target wasm32-wasip2 --release
+```
+
+#### 2. 构建 MCP Server
+
+```powershell
 cd mcp-server
 npm install
 npm run build
 ```
+
+#### 3. 在 Zed 中安装
+
+1. 在 Zed 中按 `Ctrl+Shift+P`
+2. 输入: `zed: install dev extension`
+3. 选择项目目录
+
+**详细的开发和调试指南请查看: [DEVELOPMENT.md](./DEVELOPMENT.md)**
 
 ## 使用
 
