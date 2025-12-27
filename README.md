@@ -14,11 +14,14 @@ Zed 编辑器的双向链接 AI 扩展，提供 Obsidian/Roam/Logseq 风格的 `
 
 ```powershell
 # 克隆项目
-git clone <your-repo-url>
+git clone https://github.com/ytfh44/roamingzed.git
 cd roamingzed
 
-# 运行安装脚本
+# 运行安装脚本 (Windows)
 .\install.ps1
+
+# 或者 (Linux/macOS)
+./install.sh
 ```
 
 ### 手动安装

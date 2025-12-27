@@ -4,7 +4,7 @@ description = "Bidirectional wikilink support with AI integration for personal k
 version = "0.1.0"
 schema_version = 1
 authors = ["RoamingZed Contributors"]
-repository = "https://github.com/roamingzed/roamingzed"
+repository = "https://github.com/ytfh44/roamingzed"
 
 [context_servers.roamingzed]
 # MCP server launched via npx roamingzed-mcp

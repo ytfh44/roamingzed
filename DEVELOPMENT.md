@@ -17,6 +17,8 @@
 ### 必需工具
 
 1. **Rust 工具链** (用于构建 Zed 扩展)
+   
+   **Windows:**
    ```powershell
    # 安装 Rust
    winget install Rustlang.Rustup
@@ -24,9 +26,18 @@
    # 添加 WASM 目标
    rustup target add wasm32-wasip2
    ```
+   
+   **Linux/macOS:**
+   ```bash
+   # 安装 Rust
+   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+   
+   # 添加 WASM 目标
+   rustup target add wasm32-wasip2
+   ```
 
 2. **Node.js 18+** (用于 MCP 服务器)
-   ```powershell
+   ```bash
    # 检查版本
    node --version  # 应该 >= 18.0.0
    npm --version
@@ -42,9 +53,9 @@
 
 ### 1. 克隆并初始化项目
 
-```powershell
+```bash
 # 如果还没有克隆
-git clone <your-repo-url>
+git clone https://github.com/ytfh44/roamingzed.git
 cd roamingzed
 
 # 安装 MCP 服务器依赖
